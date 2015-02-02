@@ -3,11 +3,8 @@ namespace neTpyceB\TMCms\Modules\Tags\Object;
 
 use neTpyceB\TMCms\Modules\CommonObjectCollection;
 
-class RelationCollection extends CommonObjectCollection {
+class TagsRelationCollection extends CommonObjectCollection {
     protected $db_table = 'm_tags_relations';
-
-    protected $item_type = '';
-    protected $item_id = 0;
 
     /**
      * @param int $item_id
@@ -16,6 +13,17 @@ class RelationCollection extends CommonObjectCollection {
     public function setWhereItemId($item_id)
     {
         $this->setFilterValue('item_id', $item_id);
+
+        return $this;
+
+    }
+    /**
+     * @param int $tag_id
+     * @return $this
+     */
+    public function setWhereTagId($tag_id)
+    {
+        $this->setFilterValue('tag', $tag_id);
 
         return $this;
 
