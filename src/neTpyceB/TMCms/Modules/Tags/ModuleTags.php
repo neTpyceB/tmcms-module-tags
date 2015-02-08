@@ -9,11 +9,13 @@ class ModuleTags implements IModule {
 	/** @var $this */
 	private static $instance;
 
+	public static $tables = [
+		'tags' => 'm_tags',
+		'relations' => 'm_tags_relations'
+	];
+
 	public static function getInstance() {
 		if (!self::$instance) self::$instance = new self;
 		return self::$instance;
 	}
-
-
-
 }
