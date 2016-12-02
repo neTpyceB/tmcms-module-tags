@@ -1,15 +1,15 @@
 {
-  "name": "neTpyceB/TMCms-module-tags",
+  "name": "devp-eu/tmcms-module-tags",
   "type": "library",
   "description": "Module Tags for TMCms",
   "keywords": ["module", "tags"],
-  "homepage": "http://devp.lv/",
+  "homepage": "http://devp.eu/",
   "license": "proprietary",
   "authors": [
     {
       "name": "Vadims Petrusevs",
-      "email": "info@petrik.lv",
-      "homepage": "http://petrik.lv/",
+      "email": "info@petrik.eu",
+      "homepage": "http://petrik.eu/",
       "role": "Developer"
     }
   ],
